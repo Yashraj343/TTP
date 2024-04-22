@@ -50,3 +50,12 @@ class  Questions(models.Model):
     take=models.BooleanField(default=True)
     def __str__(self):
         return str(self.id)
+    
+class PrevQuestionPaperSet(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    date=models.CharField(max_length=100) 
+    filename=models.FileField(upload_to='prevfiles')
+    stream= models.CharField(max_length=100,choices=choice)
+    branch=models.CharField(max_length=100,choices=choice2)
+    def __str__(self):
+        return str(self.id)

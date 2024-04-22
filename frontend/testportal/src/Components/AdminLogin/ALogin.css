@@ -1,13 +1,13 @@
-
-
 .big1
 {
   background-image: url("../../Assets/login-background.png");
   width: 100%;
-  height:100vh;
-background-size: 90%;
-background-repeat: no-repeat;
- margin-right: 50%;
+  height:100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-right: 50%;
+  overflow-x: none;
+  overflow-y: none;
 }
 
 .login1 {
@@ -19,15 +19,12 @@ background-repeat: no-repeat;
   padding: 20px, 20px, 43px, 20px;
   display: flex;
   flex-direction: column;
-  /* align-items: left; */
   text-align: center;
   position: relative;
   margin-left: 400px;
-
   top:150px;   
   left:850px;
   border:1px;
-
   gap:80px;
 }
 
@@ -43,7 +40,6 @@ background-repeat: no-repeat;
   width:480px;
   height:43.75px;
   top:132.85px;
-
   rotate: 0;
 }
 

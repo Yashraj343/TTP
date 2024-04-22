@@ -116,7 +116,7 @@ const QuizPage = () => {
         // text: "You clicked the button!",
         icon: 'error',
       });
-        setTabSwitch(TabSwitch+1);
+        setTabSwitch(TabSwitch=>TabSwitch+1);
     }
       // Tab switch prevent
       useEffect(() => {

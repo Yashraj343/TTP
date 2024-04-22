@@ -40,6 +40,19 @@ const Login = () => {
     }
     return error;
   };
+ 
+//   useEffect(() => {
+//     if (localStorage.getItem("tempid") === null) {
+//         window.location.href = "/"
+//     }
+//     // Prevent body from scrolling
+//     document.body.style.overflow = 'hidden';
+
+//     return () => {
+//         // Re-enable scrolling when component unmounts
+//         document.body.style.overflow = 'auto';
+//     };
+// }, []);
 
   const loginHandler = async(e) => {
     e.preventDefault();
@@ -64,6 +77,7 @@ const Login = () => {
     }
     
   };
+
 
   return (
     <div className={"big1"} > 
